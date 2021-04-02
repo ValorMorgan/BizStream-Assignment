@@ -1,0 +1,85 @@
+html {
+  --blue: #0087AA;
+  --text: #4A4A4A;
+  --white: #FFFFFF;
+  --submit-hover: #1997B7;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-wrapper {
+  width: 50%;
+  min-width: 680px;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  background-color: #F5F5F5;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+.form h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.form label {
+  line-height: 2.5em;
+}
+
+.form-input {
+  height: 36px;
+  margin-bottom: 10px;
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+}
+.form-input:invalid {
+  border-color: red;
+  box-shadow: 0 0 5px 0 red;
+}
+
+.form-input-multi {
+  height: 144px;
+  resize: none;
+}
+
+.button-submit {
+  height: 36px;
+  margin-top: 36px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+#response-message {
+  position: absolute;
+  top: 1em;
+  right: 30%;
+  left: 30%;
+  background-color: lightgreen;
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2em;
+  text-align: center;
+}
+
+#response-message[data-error] {
+  background-color: lightcoral;
+  color: red;
+}
